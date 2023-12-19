@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript | Project</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/f47d76222e.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/logo.jpg">
+</head>
+<body>
+<a href="login.html"><img src="img/english.jpg" alt=""></a>
+<a href="#" onclick="switchLanguage('ge', event)"><img src="img/georgian flag.png" alt=""></a>
+    <div class="container" id="signupContainer">
+        <div class="form-box">
+            <h1 id="title" class="translatable" data-translation-key="login">Log In</h1>
+            <form action="" id="loginForm">
+                <div class="input-group" id="signinFields">
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" name="email" id="emailField" placeholder="Email" data-translation-key="email_placeholder" required>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" name="password" id="passwordField" placeholder="Password" data-translation-key="password_placeholder" required>
+                    </div>
+                    <p class="translatable" data-translation-key="account" >Don't have an account? Create one!</p><a href="create.html" class="translatable" data-translation-key="create" >Create an account</a>
+                </div>
+                <div class="btn-field">
+                    <button type="submit" id="login" class="translatable" data-translation-key="logins">Log In</button>
+
+                </div>
+            </form>
+            <div class="home">
+                <a href="index.html" class="translatable" data-translation-key="back">Go Back</a>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

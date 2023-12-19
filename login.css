@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(img/background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.form-box {
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: whitesmoke;
+    padding: 50px 20px 70px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 38px;
+    height: 600px;
+}
+
+.form-box h1 {
+    font-size: 30px;
+    margin-bottom: 0px;
+    color: #83b735;
+    position: relative;
+}
+
+.form-box h1::after {
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #83b735;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.input-field {
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+
+input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+
+.input-field i {
+    margin-left: 15px;
+    color: #999;
+}
+
+form p {
+    text-align: left;
+    font-size: 13px;
+}
+
+form p a {
+    text-decoration: none;
+    color: #83b735;
+}
+
+.btn-field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btn-field button {
+    width: 85%;
+    background-color: #83b735;
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+    margin-bottom: 10px;
+    transition: all ease 0.4s;
+}
+
+.btn-field button.disable {
+    background-color: #eaeaea;
+    color: #555;
+}
+
+.btn-field button:hover {
+    transform: scale(1.08);
+}
+
+.input-group {
+    height: 280px;
+}
+
+.signin-mode .input-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+.signin-mode .input-field input {
+    margin: 15px 0;
+}
+
+.hide-field {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding: 0;
+    margin: 0;
+    transition: height 0.5s ease, opacity 0.5s ease;
+}
+
+.hide-field input {
+    transform: translateY(-20px);
+    transition: transform 0.5s ease;
+    padding: 0;
+    margin: 0;
+}
+
+.home {
+    display: flex;
+    justify-content: right;
+}
+
+.home a {
+    text-decoration: none;
+    color: #83b735;
+    transition: all ease 0.3s;
+}
+
+.home a:hover {
+    transform: scale(1.1);
+}
+img{
+    width: 30px;
+    height: 20px;
+}
+a{
+    text-decoration: none;
+    color: #83b735;
+}
